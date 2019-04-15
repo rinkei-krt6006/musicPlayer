@@ -1,0 +1,63 @@
+body {
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+/*  background: rgba(0, 0, 0, 0);*/
+  background-color: magenta;
+}
+#audioArea{
+  background-color: white;
+}
+.audioPic{
+  height:30px;
+  width :30px;
+  top:0px;
+  left:0px;
+}
+.audioButton{
+  position:relative;
+  float: left;
+  margin: 2px;
+  transition: 300ms linear;
+}
+.audioButton:hover{
+  background-color: gray;
+  border-radius: 10px
+}
+#playPic{
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+#pausePic{
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+#loop1Pic{
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+#trackbackButton{
+  clear: both;
+}
+#audioTimeArea{
+  clear: both;
+}
+
+
+
+
+#musicSelectArea{
+  background-color: aquamarine;
+}
+.musicListTitle{
+  background-color: cornflowerblue;
+  border-radius: 5px
+}
+.musicSelect{
+  transition: 300ms linear;
+}
+.musicSelectTitle{
+  clear:both;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <h1>Hello, electron!</h1>
+
+  <div id="musicSelectArea"></div>
+  
+  <div id="audioArea">
+    <div id="audioTitle">--</div>
+    <div id="audioButtonArea">
+      <div id="playButton" class="audioButton">
+        <img id="playPic"  class="audioPic" src="./pic/icon/ic_play_arrow_black_48dp.png">
+        <img id="pausePic" class="audioPic" src="./pic/icon/ic_pause_black_48dp.png">
+        <div class="audioPic"></div>
+      </div>
+      <div id="stopButton" class="audioButton">
+        <img id="stopPic" class="audioPic" src="./pic/icon/ic_stop_black_48dp.png">
+      </div>
+      <div id="volumedownButton" class="audioButton">
+        <img id="volumedownPic" class="audioPic" src="./pic/icon/ic_volume_mute_black_48dp.png">
+      </div>
+      <div id="volumeupButton" class="audioButton">
+        <img id="volumeupPic" class="audioPic" src="./pic/icon/ic_volume_up_black_48dp.png">
+      </div>
+      <br>
+      <div id="trackbackButton" class="audioButton">
+        <img id="trackbackPic" class="audioPic" src="./pic/icon/ic_skip_previous_black_48dp.png">
+      </div>
+      <div id="seekbackButton" class="audioButton">
+        <img id="seekbackPic" class="audioPic" src="./pic/icon/ic_navigate_before_black_48dp.png">
+      </div>
+      <div id="loopButton" class="audioButton">
+        <img id="loopPic" class="audioPic" src="./pic/icon/ic_cached_black_48dp.png">
+        <img id="loop1Pic" class="audioPic" src="./pic/icon/ic_cached_black_48dp.png">
+      </div>
+      <div id="seekskipButton" class="audioButton">
+        <img id="seekskipPic" class="audioPic" src="./pic/icon/ic_navigate_next_black_48dp.png">
+      </div>
+      <div id="trackskipButton" class="audioButton">
+        <img id="trackskipPic" class="audioPic" src="./pic/icon/ic_skip_next_black_48dp.png">
+      </div>
+    </div>
+
+    <div id="audioTimeArea">
+      <span id="audioCurrentTime"></span>
+      /
+      <span id="audioDurationTime"></span>
+      <span id="volumeArea">
+        vol <span id="volume">100</span>%
+      </span>
+    </div>
+  </div>
+  <div id="trackSelectArea">
+    <input id="volumeInput" type="range" value="100" min="0" max="100" step="1">
+  </div>
+
+
+  <script>window.jQuery = window.$ = require("./jquery.js")</script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
